@@ -1,0 +1,15 @@
+﻿<h1>Service Point Login</h1>
+<form asp-action="Authenticate" method="post">
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+</form>
+
+<!-- ServicePoint/Dashboard.cshtml -->
+<h1>@Model.Name's Dashboard</h1>
+<button asp-action="GetNext">Get Next Number</button>
+<button asp-action="Recall">Recall Number</button>
+<button asp-action="NoShow">Mark as No Show</button>
+<button asp-action="Finished">Mark as Finished</button>
+<button asp-action="Transfer">Transfer Number</button>
+<button asp-action="ViewQueue">View Queue</button>
